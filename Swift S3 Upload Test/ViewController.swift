@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Swift S3 Upload Test
 //
-//  Created by masahito-okubo on 2018/11/18.
+//  Created by Mozy on 2018/11/18.
 //  Copyright © 2018年 Mozy. All rights reserved.
 //
 
