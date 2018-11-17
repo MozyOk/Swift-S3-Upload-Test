@@ -12,9 +12,12 @@
 		60A93C3221A07A200026A04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A93C3021A07A200026A04F /* Main.storyboard */; };
 		60A93C3421A07A210026A04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A93C3321A07A210026A04F /* Assets.xcassets */; };
 		60A93C3721A07A210026A04F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A93C3521A07A210026A04F /* LaunchScreen.storyboard */; };
+		D89E986863567CB3BB7C59B4 /* Pods_Swift_S3_Upload_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1E6D2876E623F762936413 /* Pods_Swift_S3_Upload_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EB358EDAF9BB63E2AD39693 /* Pods-Swift S3 Upload Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift S3 Upload Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift S3 Upload Test/Pods-Swift S3 Upload Test.debug.xcconfig"; sourceTree = "<group>"; };
+		1A1E6D2876E623F762936413 /* Pods_Swift_S3_Upload_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_S3_Upload_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A93C2921A07A200026A04F /* Swift S3 Upload Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift S3 Upload Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A93C2C21A07A200026A04F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60A93C2E21A07A200026A04F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		60A93C3321A07A210026A04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60A93C3621A07A210026A04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60A93C3821A07A210026A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F60565CE0EF200160B41EA2 /* Pods-Swift S3 Upload Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift S3 Upload Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift S3 Upload Test/Pods-Swift S3 Upload Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89E986863567CB3BB7C59B4 /* Pods_Swift_S3_Upload_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				60A93C2B21A07A200026A04F /* Swift S3 Upload Test */,
 				60A93C2A21A07A200026A04F /* Products */,
+				C6165895EB954DE162A3D5EF /* Pods */,
+				79721A8AAF558554C70096CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "Swift S3 Upload Test";
 			sourceTree = "<group>";
 		};
+		79721A8AAF558554C70096CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A1E6D2876E623F762936413 /* Pods_Swift_S3_Upload_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6165895EB954DE162A3D5EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EB358EDAF9BB63E2AD39693 /* Pods-Swift S3 Upload Test.debug.xcconfig */,
+				7F60565CE0EF200160B41EA2 /* Pods-Swift S3 Upload Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60A93C3B21A07A210026A04F /* Build configuration list for PBXNativeTarget "Swift S3 Upload Test" */;
 			buildPhases = (
+				A1DE9AABFBC2F5CB1D34DD18 /* [CP] Check Pods Manifest.lock */,
 				60A93C2521A07A1F0026A04F /* Sources */,
 				60A93C2621A07A1F0026A04F /* Frameworks */,
 				60A93C2721A07A1F0026A04F /* Resources */,
+				55DBD5550CBBCFEC91D636A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55DBD5550CBBCFEC91D636A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swift S3 Upload Test/Pods-Swift S3 Upload Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift S3 Upload Test/Pods-Swift S3 Upload Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1DE9AABFBC2F5CB1D34DD18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift S3 Upload Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60A93C2521A07A1F0026A04F /* Sources */ = {
@@ -280,6 +351,7 @@
 		};
 		60A93C3C21A07A210026A04F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB358EDAF9BB63E2AD39693 /* Pods-Swift S3 Upload Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +370,7 @@
 		};
 		60A93C3D21A07A210026A04F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F60565CE0EF200160B41EA2 /* Pods-Swift S3 Upload Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

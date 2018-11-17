@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AWSCognito
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Amazon Cognito 認証情報プロバイダーを初期化します
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast2,
+                                                                identityPoolId:"us-east-2:ID名")
+        
+        let configuration = AWSServiceConfiguration(region:.USEast2, credentialsProvider:credentialsProvider)
+        
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
         return true
     }
 
